@@ -24,3 +24,26 @@ print(minute)
 word1, word2 = input().split()
 string = word1 + word2
 print(string)
+
+# 6025
+a, b = input().split()  
+c = int(a) + int(b)
+print(c)
+
+# 6026
+f1 = input()
+f2 = input()  
+total = float(f1) + float(f2)
+print(total)
+
+# 6027
+num = int(input())
+print('%x'%num)
+
+# 6028
+num = int(input())
+print('%X'%num)
+
+# 6029
+num = int(input(), 16)
+print('%o'%num)
