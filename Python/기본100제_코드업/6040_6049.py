@@ -28,3 +28,29 @@ print(int(n1) * int(n2))
 print(int(n1) // int(n2))
 print(int(n1) % int(n2))
 print(round(data, 2))
+
+
+# 6045
+n1, n2, n3 = input().split()
+total = int(n1) + int(n2) + int(n3)
+print(total, '%.2f'%(total/3))
+
+
+# 6046
+data = int(input())
+print(data<<1)
+
+
+# 6047
+n1, n2 = input().split()
+print(int(n1) << int(n2))
+
+
+# 6048
+n1, n2 = input().split()
+print(int(n1)<int(n2))
+
+
+# 6049
+n1, n2 = input().split()
+print(int(n1) == int(n2))
