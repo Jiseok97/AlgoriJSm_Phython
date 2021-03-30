@@ -62,3 +62,51 @@ n = int(input())
 a = list(map(int, input().split()))
 a.sort()
 print(a[0])
+
+
+
+# 6095
+d = [[0 for j in range(20)] for i in range(20)]  # List Comprehensions
+# d의 이차원 배열(20x20)을 아래 코드보다 List Comprehensions로 더 간결하게 표현한 것
+
+# d = []
+# for i in range(20):
+#   d.append([])
+#   for j in range(20):
+#     d[i].append(0)
+
+n = int(input())
+
+for i in range(n):
+  x, y = input().split()
+  d[int(x)][int(y)] = 1
+
+for i in range(1, 20):
+  for j in range(1, 20):
+    print(d[i][j], end =' ')
+  print()
+
+
+
+
+# 6096
+# 아직 못 품
+d = [[0 for j in range(20)] for i in range(20)]
+
+for i in range(20):
+  x, y = input().split()
+  for j in range(1, 20):
+    if d[j][int(y)] == 0:
+      d[j][int(y)] = 1
+    else:
+      d[j][int(y)] = 0
+      
+    if d[int(x)][j] == 0:
+      d[int(x)][j] = 1
+    else:
+      d[int(x)][j] = 0
+
+for i in range(1, 20):
+  for j in range(1, 20):
+    print(d[i][j], end =' ')
+  print()
