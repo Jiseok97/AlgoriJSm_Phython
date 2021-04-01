@@ -90,7 +90,6 @@ for i in range(1, 20):
 
 
 # 6096
-# 아직 못 품
 a = [[]*19 for _ in range(19)]
 for i in range(19):
    a[i]=list(map(int,input().split()))
@@ -113,4 +112,28 @@ for i in range(n):
 for i in range(19):
     for j in range(19):
         print(a[i][j],end=' ')
+    print()
+
+
+
+
+# 6097
+h,w = map(int,input().split())
+n = int(input())
+
+board=[[0]*w for _ in range(h)]
+
+for i in range(n):
+    l,d,x,y = map(int,input().split())
+    if(d==0):
+        for j in range(l):
+            board[x-1][y-1+j]=1
+    else:
+        for j in range(l):
+            board[x-1+j][y-1]=1
+            
+
+for i in range(h):
+    for j in range(w):
+        print(board[i][j],end=' ')
     print()
