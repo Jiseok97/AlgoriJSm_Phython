@@ -1,8 +1,10 @@
 import sys
 
-r = sys.stdin.readline
-N, W = map(int, r().split())
-bag = [tuple(map(int, r().split())) for _ in range(N)]
+input = sys.stdin.readline
+N, W = map(int, input().split())
+bag = [tuple(map(int, input().split())) for _ in range(N)]
+# 튜플은 원소의 값 변경 불가능
+# 튜플 (), 리스트 []
 
 knap = [0 for _ in range(W+1)]
 
